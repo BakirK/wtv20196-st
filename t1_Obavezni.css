@@ -1,0 +1,25 @@
+p:hover{
+	background-color: yellow;
+}
+p.parni{
+	color: green;
+}
+p.cetvrti{
+	text-decoration: underline;
+}
+p.italic{
+	font-style: italic;
+}
+input[type=text]{
+	background-color: grey;
+}
+input[type=password]{
+	background-color: black;
+	color:white;
+}
+input[type=number]{
+	color: blue;
+}
+p::before{
+	content: "🔍";
+}
