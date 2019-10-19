@@ -1,0 +1,20 @@
+.containerdiv label {
+  position: absolute
+}
+.containerdiv input {
+  margin-left: 9em;
+  margin-bottom: 1em;
+}
+.containerdiv input[type=radio] {
+  margin-left: 9em;
+}
+.containerdiv input[type=checkbox] {
+  margin-left: 4em;
+}
+.containerdiv input[type=text] {
+  width: 200px;
+}
+.containerdiv input[type=number] {
+  width: 100px;
+}
+body { font-size: 20px; }
