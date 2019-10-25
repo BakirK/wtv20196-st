@@ -1,9 +1,10 @@
 .citat{
 	float: center;
-	width: 65%;
+	width: 60%;
 	border: 0.5%;
 	border-style: solid;
-	margin: 4em auto;
+	margin: 3em auto;
+	margin-bottom: 1em;
 	background-color: lightgrey;
 }
 h1{
