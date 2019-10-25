@@ -1,8 +1,6 @@
 .citat{
-	float: center;
 	width: 60%;
-	border: 0.5%;
-	border-style: solid;
+	border: 0.1em solid;
 	margin: 3em auto;
 	margin-bottom: 1em;
 	background-color: lightgrey;
@@ -30,7 +28,7 @@ ul{
 }
 #link_nazad{
 	border-style: solid;
-	border: 0.5%;
+	border: 0.1em solid;
 	display: inline-block;
 	position: fixed;
 	top: 0;
@@ -39,7 +37,7 @@ ul{
 }
 #link_nazad:before{
 	content: url(listArrow.gif);
-	vertical-align: center;
+	vertical-align: middle;
 }
 #link_nazad a:link{
     color: red;
