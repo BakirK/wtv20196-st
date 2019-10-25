@@ -1,0 +1,47 @@
+.citat{
+	float: center;
+	width: 65%;
+	border: 0.5%;
+	border-style: solid;
+	margin: 4em auto;
+	background-color: lightgrey;
+}
+h1{
+	color: red;
+	float: right;
+	margin: 0 auto;
+	position: absolute;
+	padding-right: 1%;
+    right: 0;
+    top: 0;
+}
+h2{
+	color: black;
+	float: right;
+	position: absolute;
+	margin-top: 1.3em; 
+	right: 0;
+    top: 0;
+	font-size: 1em;
+}
+ul{
+	list-style-image: url(sqpurple.gif);
+}
+#link_nazad{
+	border-style: solid;
+	border: 0.5%;
+	display: inline-block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 1em 1em 1em 1em;
+}
+#link_nazad:before{
+	content: url(listArrow.gif);
+	vertical-align: center;
+}
+#link_nazad a:link{
+    color: red;
+	text-decoration: none;
+}
+	
