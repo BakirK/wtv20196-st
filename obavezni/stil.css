@@ -2,7 +2,7 @@
 
 *{
 	box-sizing: border-box;
-	overflow: hidden;
+	overflow: auto;
 }
 body{
 	background-color: #a7a09a;
@@ -14,11 +14,11 @@ body{
 	margin: 0 auto; 
 }
 #zaglavlje{
+    padding-left: 1em;
 	font-size: 22pt;
 	background-color: #ddd;
 	font-family: Gabriela;
 	color: green;
-	display: block;
 }
 #meni{
 	background-color: #c99;
@@ -42,7 +42,9 @@ body{
 	float: right;
 }
 #podnozje{
-	padding: 0.5em;
+	padding-left: 0.5em;
 	width: 100%;
 	background-color: #cc9;
+	/*margin-bottom: -20px;*/
+	/*max-height: 40px;*/
 }
