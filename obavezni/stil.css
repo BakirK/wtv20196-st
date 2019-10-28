@@ -20,6 +20,9 @@ body{
 	font-family: Gabriela;
 	color: green;
 }
+#zaglavlje h1{
+    margin: 1%;
+}
 #meni{
 	background-color: #c99;
 }
