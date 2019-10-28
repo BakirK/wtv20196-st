@@ -24,6 +24,7 @@ body{
 	background-color: #c99;
 }
 #meni ul{
+    margin: 1%;
 	list-style-type: none;
 }
 #meni li{
@@ -42,9 +43,14 @@ body{
 	float: right;
 }
 #podnozje{
+    margin: 0.5%;
 	padding-left: 0.5em;
 	width: 100%;
 	background-color: #cc9;
+	margin: 0px;
 	/*margin-bottom: -20px;*/
 	/*max-height: 40px;*/
+}
+#podnozje p{
+    margin: 1%;
 }
