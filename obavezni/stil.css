@@ -31,7 +31,7 @@ body{
 	list-style-type: none;
 }
 #meni li{
-	display: inline-block;
+	display: inline-block; /*elementi liste su poredani horizontalno*/
 }
 #glavni{
 	padding: 0.5em;
