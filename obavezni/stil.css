@@ -1,8 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Gabriela);
 
 *{
-	box-sizing: border-box;
-	overflow: auto;
+	box-sizing: border-box; /*racuna sirinu bez padding*/
+	overflow: auto; /*omogucava da se vidi pozadina jer je po default sirina 0 za div?*/
 }
 body{
 	background-color: #a7a09a;
