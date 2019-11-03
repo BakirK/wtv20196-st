@@ -1,8 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Gabriela);
 
 *{
-	box-sizing: border-box;
-	overflow: hidden;
+	box-sizing: border-box; /*racuna sirinu bez padding*/
+	overflow: auto; /*omogucava da se vidi pozadina jer je po default sirina 0 za div?*/
 }
 body{
 	background-color: #a7a09a;
@@ -14,20 +14,24 @@ body{
 	margin: 0 auto; 
 }
 #zaglavlje{
+    padding-left: 1em;
 	font-size: 22pt;
 	background-color: #ddd;
 	font-family: Gabriela;
 	color: green;
-	display: block;
+}
+#zaglavlje h1{
+    margin: 1%;
 }
 #meni{
 	background-color: #c99;
 }
 #meni ul{
+    margin: 1%;
 	list-style-type: none;
 }
 #meni li{
-	display: inline-block;
+	display: inline-block; /*elementi liste su poredani horizontalno*/
 }
 #glavni{
 	padding: 0.5em;
@@ -42,7 +46,14 @@ body{
 	float: right;
 }
 #podnozje{
-	padding: 0.5em;
+    margin: 0.5%;
+	padding-left: 0.5em;
 	width: 100%;
 	background-color: #cc9;
+	margin: 0px;
+	/*margin-bottom: -20px;*/
+	/*max-height: 40px;*/
+}
+#podnozje p{
+    margin: 1%;
 }
