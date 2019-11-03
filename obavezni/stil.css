@@ -3,8 +3,6 @@
 *{
 	box-sizing: border-box;
 	overflow: hidden;
-	-moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box;
 }
 body{
 	background-color: #a7a09a;
@@ -44,7 +42,7 @@ body{
 	float: right;
 }
 #podnozje{
-	padding: -0.9em;
+	padding: 0.5em;
 	width: 100%;
 	background-color: #cc9;
 }
