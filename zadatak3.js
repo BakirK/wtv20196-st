@@ -21,8 +21,13 @@ dugme.addEventListener( "click", function( ev ) {
     } 
 }, false);
 
-function dajNaziv(broj) {
-	if (parseInt(broj)==0) {return "nula";}
+function dajNaziv(input) {
+	var broj = parseInt(input) % 1000;
+	var t = false;
+	if(parseInt(broj) != parseInt(input)) {
+		t = true;
+	}
+	if (parseInt(input)==0) {return "nula";}
 	var naziv = "";
 	var i = 0;
 	var first = true;
@@ -31,12 +36,12 @@ function dajNaziv(broj) {
 			i++;
 			broj /= 10;
 			first = false;
+			if(i == 2) break;
 		} 
-		var temp2 = parseInt(broj)%10;
 		var temp = parseInt(broj)/10;
 		if(parseInt(temp)%10 == 1 && first) {
 			first = false;
-			naziv = specific[temp2-1] + naziv;	
+			naziv = specific[(parseInt(broj)%10)-1] + naziv;	
 			i++;
 			broj /= 10;
 		} else {
@@ -44,6 +49,35 @@ function dajNaziv(broj) {
 		}
 		i++;
 		broj /= 10;
+	}
+	if(t && parseInt(input) < 1000000) {
+		if(parseInt(input/1000) == 1){
+			naziv = "jedna hiljada" + naziv;
+		}
+		else if(parseInt(input/1000) < 5 && parseInt(input/1000) > 1){
+			naziv = dajNaziv(parseInt((input)/1000)) + "hiljade" + naziv;
+		} else {
+			naziv = dajNaziv(parseInt((input)/1000)) + "hiljada" + naziv;
+		}
+		input -= parseInt((input)/1000)*1000;
+		t = false;
+	}
+	broj = parseInt(input) % 1000;
+	if(parseInt(broj) != parseInt(input)) {
+		t = true;
+	}
+	if(t) {
+		var s = parseInt(input/1000000);
+		if(parseInt(s) == parseInt(1)){
+			naziv ="jedan milion" + naziv;
+		} else {
+			naziv = dajNaziv(parseInt(input/1000)) + "miliona" + naziv;
+		}
+		input -= parseInt(input/1000000)*1000000;
+		t = false;
+	}
+	if(parseInt(input) > 0 && input > 999) {
+		naziv = naziv + dajNaziv(parseInt(input));
 	}
 	return naziv;
 }
