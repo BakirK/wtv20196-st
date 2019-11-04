@@ -71,7 +71,7 @@ function dajNaziv(input) {
 		if(parseInt(s) == parseInt(1)){
 			naziv ="jedan milion" + naziv;
 		} else {
-			naziv = dajNaziv(parseInt(input/1000)) + "miliona" + naziv;
+			naziv = dajNaziv(parseInt(s)) + "miliona" + naziv;
 		}
 		input -= parseInt(input/1000000)*1000000;
 		t = false;
