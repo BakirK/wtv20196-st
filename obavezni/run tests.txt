@@ -1,0 +1,1 @@
+galen check Vjezbetest.gspec --url http://localhost/proba.html --size 1024x768 --htmlreport izvjestaji
