@@ -1,0 +1,17 @@
+
+.prikazPrva {
+    display: none;
+}
+
+.prikazDruga {
+    display: none;
+}
+.prva,
+.druga {
+    list-style: none;
+}
+.druga:before,
+.prva:before {
+    content: "+";
+    margin-right: 4px;
+}
