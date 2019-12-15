@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+
+<HEAD>
+  <TITLE>Zadatak3</TITLE>
+</HEAD>
+
+<BODY>
+  <form target="_self" id="forma" method="POST" action="ispisi.html">
+    Ime: <input type="text" name="ime"><br>
+    Prezime: <input type="text" name="prezime"><br>
+    Adresa: <input type="text" name="adresa"><br>
+    Broj telefona: <input type="text" name="broj_telefona"><br>
+    <input onclick="funkcija()" type="submit" value="Posalji zahtjev">
+  </form><br><br>
+  <script>
+    function funkcija() {
+      // posalji post da se unese novi
+      var ime = document.getElementsByName("ime")[0].value;
+      var prezime = document.getElementsByName("prezime")[0].value;
+      var adresa = document.getElementsByName("adresa")[0].value;
+      var brtelf = document.getElementsByName("broj_telefona")[0].value;
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "http://localhost:8080/", true);
+      var params = `ime=${ime}&prezime=${prezime}&adresa=${adresa}&broj_telefona=${brtelf}`;
+      xhr.send(params);
+    }
+  </script>
+</BODY>
+</HTML>
