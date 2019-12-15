@@ -2,6 +2,9 @@ window.onload = function pozovi() {
       var xhr = new XMLHttpRequest();
       const url = "http://localhost:8080/";
       xhr.open("GET", url, true);
+      xhr.onreadystatechange = function() {
+        console.log(xhr.responseText.toString());
+      }
       //xhr.setRequestHeader("Content-Type", "application/json");
       xhr.send();
       /*xhr.onreadystatechange = function () {
@@ -54,9 +57,7 @@ window.onload = function pozovi() {
           document.querySelector("body").appendChild(tbl);
         }
       };*/
-      xhr.onreadystatechange = (e) => {
-        console.log(e.responseText)
-      }
+      
       
       
     }
