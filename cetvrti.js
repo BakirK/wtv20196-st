@@ -1,10 +1,10 @@
 window.onload = function pozovi() {
       var xhr = new XMLHttpRequest();
-      const url = "http://localhost:8080/";
+      const url = "http://localhost:8085/";
       xhr.open("GET", url, true);
-      xhr.onreadystatechange = function() {
+      /*xhr.onreadystatechange = function() {
         console.log(xhr.responseText);
-      }
+      }*/
       //xhr.setRequestHeader("Content-Type", "application/json");
       xhr.send();
 
@@ -13,7 +13,7 @@ window.onload = function pozovi() {
 
 
 
-      /*xhr.onreadystatechange = function () {
+      xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
           var json = JSON.parse(xhr.responseText);
           console.log(json);
@@ -47,7 +47,7 @@ window.onload = function pozovi() {
           for (let i = 0; i < json.length - 1; ++i) {
             row = document.createElement("tr");
             cell = document.createElement("td");
-            cellText = document.createTextNode(json[i].ime);
+            cellText = document.createTextNode(json[i].Ime);
             cell.appendChild(cellText);
             row.appendChild(cell);
             cell2 = document.createElement("td");
@@ -66,7 +66,7 @@ window.onload = function pozovi() {
           }
           document.querySelector("body").appendChild(tbl);
         }
-      };*/
+      };
       
       
       

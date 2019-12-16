@@ -15,7 +15,7 @@ http.createServer(function (req, res) {
 	    	let jsonObj = csvjson.toObject(data.toString());
 	    	//res.writeHead('Access-Control-Allow-Origin', 'http://localhost:8080');
 	    	res.writeHead(200, {'Content-Type': 'application/json'});
-	    	//res.writeHead("Access-Control-Allow-Origin", "*");
+	    	//res.head("Access-Control-Allow-Origin", "*");
 		    //res.writeHead("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 		    //next();
 	    	res.end(JSON.stringify(jsonObj));
