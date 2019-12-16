@@ -59,7 +59,7 @@ window.onload = function pozovi() {
             cell3.appendChild(cellText3);
             row.appendChild(cell3);
             cell4 = document.createElement("td");
-            cellText4 = document.createTextNode(json[i].broj_telefona);
+            cellText4 = document.createTextNode(json[i]['broj telefona']);
             cell4.appendChild(cellText4);
             row.appendChild(cell4);
             tbl.appendChild(row);
