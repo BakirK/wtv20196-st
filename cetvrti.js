@@ -3,10 +3,16 @@ window.onload = function pozovi() {
       const url = "http://localhost:8080/";
       xhr.open("GET", url, true);
       xhr.onreadystatechange = function() {
-        console.log(xhr.responseText.toString());
+        console.log(xhr.responseText);
       }
       //xhr.setRequestHeader("Content-Type", "application/json");
       xhr.send();
+
+
+
+
+
+
       /*xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
           var json = JSON.parse(xhr.responseText);
@@ -21,19 +27,23 @@ window.onload = function pozovi() {
           cellText = document.createTextNode("Ime");
           cell.appendChild(cellText);
           row.appendChild(cell);
+
           cell2 = document.createElement("th");
           cellText2 = document.createTextNode("Prezime");
           cell2.appendChild(cellText2);
           row.appendChild(cell2);
+
           cell3 = document.createElement("th");
           cellText3 = document.createTextNode("Adresa");
           cell3.appendChild(cellText3);
           row.appendChild(cell3);
+
           cell4 = document.createElement("th");
           cellText4 = document.createTextNode("Broj telefona");
           cell4.appendChild(cellText4);
           row.appendChild(cell4);
           tbl.appendChild(row);
+
           for (let i = 0; i < json.length - 1; ++i) {
             row = document.createElement("tr");
             cell = document.createElement("td");
