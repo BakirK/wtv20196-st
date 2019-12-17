@@ -5,6 +5,7 @@ undefined,Dragojevic,Miscina 1,undefined
 Milos,Dragojevic,Miscina 1,333/111-222
 Milos,Dragojevic,Miscina 1,undefined
 Milos,Dragojevic,Miscina 1,undefined
-f,b,g,123
-,,,
-,,,
+briski,danijel,cvila,134
+f,f,f,2
+Faris,Bazdar,Gradacacka 102,12312
+Faris,Bazdar,Gradacacka 102,12312

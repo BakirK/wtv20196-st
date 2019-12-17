@@ -3,7 +3,9 @@ var fs = require("fs");
 const csvjson = require('csvjson');
 
 var app = express();
-
+app.get("/cetvrti.html",function(req,res){
+    res.sendFile(__dirname+"/cetvrti.html");
+})
 app.get("/ispisi.html",function(req,res){
     res.sendFile(__dirname+"/ispisi.html");
 })

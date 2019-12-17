@@ -44,7 +44,7 @@ window.onload = function pozovi() {
           row.appendChild(cell4);
           tbl.appendChild(row);
 
-          for (let i = 0; i < json.length - 1; ++i) {
+          for (let i = 0; i < json.length; ++i) {
             row = document.createElement("tr");
             cell = document.createElement("td");
             cellText = document.createTextNode(json[i].Ime);
