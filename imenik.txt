@@ -1,0 +1,14 @@
+Ime,prezime,adresa,broj telefona
+Mujo,Mujić,Ferhadija 1,123/123-123
+bakir,karovic,neka,43
+undefined,Dragojevic,Miscina 1,undefined
+Milos,Dragojevic,Miscina 1,333/111-222
+Milos,Dragojevic,Miscina 1,undefined
+Milos,Dragojevic,Miscina 1,undefined
+briski,danijel,cvila,134
+f,f,f,2
+Faris,Bazdar,Gradacacka 102,12312
+Faris,Bazdar,Gradacacka 102,12312
+Se,J,g,4
+Se,J,g,4
+Se,J,g,4
