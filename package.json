@@ -1,0 +1,21 @@
+{
+  "name": "wtv20196-st",
+  "version": "1.0.0",
+  "description": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**",
+  "main": "primjer1.js",
+  "dependencies": {
+    "express-session": "^1.17.0",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://BakirK@bitbucket.org/BakirK/wtv20196-st.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/BakirK/wtv20196-st#readme"
+}
