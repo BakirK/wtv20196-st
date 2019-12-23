@@ -9,7 +9,7 @@ app.use(session({
    resave: true,
    saveUninitialized: true
 }));
-app.use(express.static(__dirname+”/public”));
+app.use(express.static(__dirname+"/public"));
 app.get('/',function(req,res){
    res.sendFile(__dirname+"/public/pogodiBroj.html");
 });
@@ -28,7 +28,7 @@ app.post('/',function(req,res){
        res.json({pokusaj:{broj_pokusaja:broj_pokusaja,poruka:poruka}});
    }
 
-   if(broj_pokusaja>0&&poruka.length==0){
+   if(broj_pokusaja>0){
        broj_pokusaja--;
        req.session.broj_pokusaja=broj_pokusaja;
        if(req.body['pokusaj']==broj){

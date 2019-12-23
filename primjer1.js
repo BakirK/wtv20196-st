@@ -43,6 +43,7 @@ app.post('/',function(req,res){
        }else if(req.body['pokusaj']>broj){
            poruka="Broj je manji!";
        }else if(req.body['pokusaj']<broj){
+           console.write(req.body);
            poruka="Broj je veći!";
        }
    }else{
